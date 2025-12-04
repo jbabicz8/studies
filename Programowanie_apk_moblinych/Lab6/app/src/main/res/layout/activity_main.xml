@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/infoDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybrana opcja: Żadna"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POJEDYNCZY ELEMENT Z LISTY" />
+
+        <Button
+            android:id="@+id/btnMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KILKA ELEMENTÓW Z LISTY" />
+
+        <Button
+            android:id="@+id/btnHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GODZINA" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATA" />
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIESTANDARDOWY" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
