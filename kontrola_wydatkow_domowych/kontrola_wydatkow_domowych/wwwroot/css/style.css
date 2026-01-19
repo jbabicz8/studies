@@ -1,0 +1,19 @@
+﻿
+:root {
+    --primary: #030213;
+    --background: #f9fafb;
+    --accent-blue: #2563eb;
+    --muted: #717182;
+    --border: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+.expense-table {
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}

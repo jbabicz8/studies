@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\infrastructure\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\infrastructure\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\controllers\\wydatkicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\controllers\\wydatkicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\models\\wydatek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\models\\wydatek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\models\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\models\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\models\\elementbudzetu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\models\\elementbudzetu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\services\\budzetdomowy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\services\\budzetdomowy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\services\\irepozytorium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\services\\irepozytorium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\services\\wyjatkibudzetu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\services\\wyjatkibudzetu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\services\\repozytoriumjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\services\\repozytoriumjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\budzet.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\budzet.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|c:\\users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{298D39E2-103E-0623-3EE0-9C5175835419}|kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj|solutionrelative:kontrola_wydatkow_domowych\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepozytorium.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\IRepozytorium.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Services\\IRepozytorium.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\IRepozytorium.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Services\\IRepozytorium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T14:49:14.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BudzetDomowy.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\BudzetDomowy.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Services\\BudzetDomowy.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\BudzetDomowy.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Services\\BudzetDomowy.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHUAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:28:15.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Kategoria.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\Kategoria.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Models\\Kategoria.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\Kategoria.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Models\\Kategoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:22:41.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Wydatek.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\Wydatek.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Models\\Wydatek.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\Wydatek.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Models\\Wydatek.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:22:24.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ElementBudzetu.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\ElementBudzetu.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Models\\ElementBudzetu.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Models\\ElementBudzetu.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Models\\ElementBudzetu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T14:46:47.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WyjatkiBudzetu.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\WyjatkiBudzetu.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Services\\WyjatkiBudzetu.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\WyjatkiBudzetu.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Services\\WyjatkiBudzetu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T14:51:34.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WydatkiController.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Controllers\\WydatkiController.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Controllers\\WydatkiController.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Controllers\\WydatkiController.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Controllers\\WydatkiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:46:13.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Attributes.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Infrastructure\\Attributes.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Infrastructure\\Attributes.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Infrastructure\\Attributes.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Infrastructure\\Attributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T14:48:52.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\index.html",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-09T14:52:53.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\js\\app.js",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\wwwroot\\js\\app.js",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\wwwroot\\js\\app.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-09T15:13:50.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RepozytoriumJSON.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\RepozytoriumJSON.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Services\\RepozytoriumJSON.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Services\\RepozytoriumJSON.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Services\\RepozytoriumJSON.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:37:44.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\appsettings.json",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\appsettings.json",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\appsettings.json",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-13T14:17:53.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "budzet.json",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\budzet.json",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\budzet.json",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\budzet.json",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\budzet.json",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T17:39:41.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Program.cs",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\Program.cs",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\Program.cs",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:20:57.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "kontrola_wydatkow_domowych\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "kontrola_wydatkow_domowych\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-09T15:13:26.796Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

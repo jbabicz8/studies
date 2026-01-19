@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Budżet Domowy - Jakub Babicz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<!--Przyciski z gornego navbara.-->
+<body class="min-h-screen bg-gray-50">
+    <nav class="bg-white border-b p-4 flex space-x-8 text-sm px-8 shadow-sm">
+        <button onclick="pokazSekcje('glowna')" class="hover:text-blue-600 font-bold transition-colors text-gray-700">Panel Główny</button>
+        <button onclick="pokazSekcje('kategorie')" class="hover:text-blue-600 font-bold transition-colors text-gray-700">Zarządzaj Kategoriami</button>
+        <button onclick="pokazSekcje('raporty')" class="hover:text-blue-600 font-bold transition-colors text-gray-700">Raporty</button>
+        <button onclick="pokazSekcje('kalendarz')" class="hover:text-blue-600 font-bold transition-colors text-gray-700">Kalendarz</button>
+    </nav>
+    <!--Panel po lewej stronie-->
+    <div class="flex">
+        <aside class="w-64 bg-white border-r p-6 min-h-screen space-y-4">
+            <button onclick="otworzModalWydatek()" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 shadow-md transition-all font-medium">
+                Dodaj wydatek
+            </button>
+            <p class="text-[10px] text-gray-400 uppercase font-bold px-2">Nawigacja</p>
+            <div class="text-xs text-gray-500 px-2 italic">Eksportuj dane w zakładce "Raporty" przy konkretnym miesiącu.</div>
+        </aside>
+        <main class="flex-1 p-8">
+            <!--Karta podgladu glownego-->
+            <div id="podgladGlowny" class="space-y-12">
+                <section class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="p-4 border-b font-bold bg-gray-50 text-gray-800 text-lg flex justify-between items-center">
+                        <span>Historia Wydatków</span>
+                        <div class="flex gap-2">
+                            <select id="filtrMiesiac" onchange="odswiezWydatki()" class="text-xs border p-1 rounded bg-white"></select>
+                            <select id="filtrRok" onchange="odswiezWydatki()" class="text-xs border p-1 rounded bg-white"></select>
+                        </div>
+                    </div>
+                    <table class="w-full">
+                        <thead class="bg-gray-100 text-gray-600 uppercase text-xs">
+                            <tr>
+                                <th class="p-4 text-left">Data</th>
+                                <th class="p-4 text-left">Kwota</th>
+                                <th class="p-4 text-left">Kategoria</th>
+                                <th class="p-4 text-left">Opis</th>
+                                <th class="p-4 text-center">Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaWydatkow" class="divide-y divide-gray-100"></tbody>
+                    </table>
+                </section>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="text-xs font-bold text-gray-700 uppercase tracking-widest">Status Budżetu</h3>
+                                <button onclick="otworzModalLimitu()" class="text-[10px] bg-blue-50 text-blue-600 px-2 py-1 rounded hover:bg-blue-100 transition-colors">
+                                    USTAW LIMIT
+                                </button>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="text-gray-500 text-xs mb-1 uppercase tracking-tighter">Wydano w wybranym okresie</div>
+                                    <div id="sumaWydatkow" class="text-3xl font-black text-gray-900">0.00 PLN</div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 border-t pt-4">
+                                    <div>
+                                        <div class="text-gray-400 text-[10px] uppercase">Limit ogólny</div>
+                                        <div id="pokazLimit" class="font-bold text-gray-700">0.00 PLN</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-400 text-[10px] uppercase">Pozostało</div>
+                                        <div id="pokazZostalo" class="font-bold text-green-600">0.00 PLN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <div class="flex justify-between text-[10px] mb-2 font-bold uppercase">
+                                <span class="text-gray-500">Wykorzystanie limitu</span>
+                                <span id="procentBudzetu" class="text-blue-600">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden mb-2">
+                                <div id="pasekPostepu" class="bg-blue-600 h-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                            <div id="alertBudzetu" class="hidden text-[10px] font-bold text-red-600 animate-pulse uppercase tracking-tighter text-center">
+                                ⚠️ Uwaga! Przekroczyłeś ustalony budżet miesięczny!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xs font-bold text-gray-700 uppercase mb-4 tracking-wider text-center">Struktura kategorii</h3>
+                        <div style="height: 300px; position: relative;">
+                            <canvas id="wykresWydatkow"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sekcjaRaportow" class="hidden space-y-8">
+                <section class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <span class="text-blue-600">📊</span> Archiwalne Raporty Miesięczne
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="listaRaportowMiesiecznych"></div>
+                </section>
+            </div>
+
+            <div id="zarzadzanieKategoriami" class="hidden">
+                <section class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="p-4 border-b font-bold bg-gray-50 flex justify-between items-center text-gray-800">
+                        <span>Zarządzaj Kategoriami</span>
+                        <button onclick="otworzModalKategorii()" class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition-all">+ Nowa Kategoria</button>
+                    </div>
+                    <table class="w-full">
+                        <thead class="bg-gray-100 text-gray-600 uppercase text-xs">
+                            <tr>
+                                <th class="p-4 text-left">Nazwa</th>
+                                <th class="p-4 text-left">Limit Miesięczny</th>
+                                <th class="p-4 text-center">Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaKategoriiUI" class="divide-y divide-gray-100"></tbody>
+                    </table>
+                </section>
+            </div>
+
+            <div id="sekcjaKalendarza" class="hidden space-y-6">
+                <section class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                            <span class="text-blue-600">📅</span> Kalendarz Wydatków
+                        </h2>
+                        <div class="flex gap-2">
+                            <select id="filtrMiesiacKal" onchange="synchronizujFiltry(this, 'filtrMiesiac'); generujKalendarz();" class="text-xs border p-2 rounded bg-gray-50 font-bold"></select>
+                            <select id="filtrRokKal" onchange="synchronizujFiltry(this, 'filtrRok'); generujKalendarz();" class="text-xs border p-2 rounded bg-gray-50 font-bold"></select>
+                        </div>
+                    </div>
+
+                    <div id="etykietaMiesiaca" class="text-center mb-4 text-sm font-bold text-gray-400 uppercase tracking-widest"></div>
+
+                    <div class="grid grid-cols-7 gap-px bg-gray-200 border border-gray-200 rounded-lg overflow-hidden shadow-inner">
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">PON</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">WT</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">ŚR</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">CZW</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">PT</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400">SOB</div>
+                        <div class="bg-gray-100 p-2 text-center text-[10px] font-bold text-gray-400 text-red-400">ND</div>
+
+                        <div id="dniKalendarza" class="contents"></div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100 flex justify-between items-center">
+                        <div>
+                            <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest block">Suma w tym miesiącu</span>
+                            <span id="sumaKalendarz" class="text-2xl font-black text-blue-700">0.00 PLN</span>
+                        </div>
+                        <div class="text-right">
+                            <span id="liczbaWpadow" class="text-[10px] font-bold text-gray-400 uppercase block italic">Liczba wydatków</span>
+                            <span id="iloscWydatkowKal" class="text-lg font-bold text-gray-700">0</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="modalWydatek" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg w-96 space-y-4 shadow-2xl text-sm">
+            <h2 class="text-lg font-bold">Zarządzaj wydatkiem</h2>
+            <div class="space-y-2">
+                <label class="text-[10px] font-bold text-gray-400">DATA</label>
+                <input type="date" id="formDate" class="w-full border p-2 rounded">
+            </div>
+            <div class="space-y-2">
+                <label class="text-[10px] font-bold text-gray-400">KWOTA (PLN)</label>
+                <input type="number" id="formAmount" placeholder="0.00" class="w-full border p-2 rounded">
+            </div>
+            <div class="space-y-2">
+                <label class="text-[10px] font-bold text-gray-400">KATEGORIA</label>
+                <select id="formCategory" class="w-full border p-2 rounded"></select>
+            </div>
+            <div class="space-y-2">
+                <label class="text-[10px] font-bold text-gray-400">OPIS (OPCJONALNIE)</label>
+                <input type="text" id="formDesc" placeholder="Np. Zakupy spożywcze" class="w-full border p-2 rounded">
+            </div>
+            <div class="flex gap-2 pt-2">
+                <button onclick="zamknijModale()" class="flex-1 bg-gray-200 p-2 rounded hover:bg-gray-300">Anuluj</button>
+                <button onclick="dodajWydatek()" class="flex-1 bg-blue-600 text-white p-2 rounded hover:bg-blue-700 shadow-md">Zapisz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalKategoria" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg w-80 space-y-4 shadow-2xl">
+            <h2 class="text-lg font-bold">Nowa kategoria</h2>
+            <input type="text" id="katName" placeholder="Nazwa kategorii" class="w-full border p-2 rounded">
+            <input type="number" id="katLimit" placeholder="Limit miesięczny (0 = brak)" class="w-full border p-2 rounded">
+            <div class="flex gap-2">
+                <button onclick="zamknijModale()" class="flex-1 bg-gray-200 p-2 rounded">Anuluj</button>
+                <button onclick="dodajKategorie()" class="flex-1 bg-blue-600 text-white p-2 rounded">Dodaj</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalLimitu" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-[60]">
+        <div class="bg-white p-6 rounded-lg w-80 space-y-4 shadow-2xl">
+            <h2 class="text-lg font-bold">Ustaw limit miesięczny</h2>
+            <input type="number" id="formLimitOgolny" placeholder="Kwota limitu" class="w-full border p-2 rounded">
+            <div class="flex gap-2">
+                <button onclick="zamknijModale()" class="flex-1 bg-gray-200 p-2 rounded">Anuluj</button>
+                <button onclick="zapiszLimitOgolny()" class="flex-1 bg-blue-600 text-white p-2 rounded">Ustaw</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
