@@ -1,0 +1,73 @@
+{
+  "Wydatki": [
+    {
+      "Data": "2026-01-09T00:00:00",
+      "Opis": "zakupy lidl",
+      "KategoriaId": 1,
+      "Kwota": 125.76,
+      "Id": 1,
+      "Wartosc": 125.76
+    },
+    {
+      "Data": "2026-01-09T00:00:00",
+      "Opis": "Uber przewoz",
+      "KategoriaId": 2,
+      "Kwota": 25.45,
+      "Id": 2,
+      "Wartosc": 25.45
+    },
+    {
+      "Data": "2026-01-09T00:00:00",
+      "Opis": "Kino",
+      "KategoriaId": 3,
+      "Kwota": 30,
+      "Id": 3,
+      "Wartosc": 30
+    },
+    {
+      "Data": "2025-12-11T00:00:00",
+      "Opis": "ddd",
+      "KategoriaId": 1,
+      "Kwota": 156.87,
+      "Id": 4,
+      "Wartosc": 156.87
+    },
+    {
+      "Data": "2026-01-07T00:00:00",
+      "Opis": "nowe farby",
+      "KategoriaId": 3,
+      "Kwota": 321.32,
+      "Id": 5,
+      "Wartosc": 321.32
+    },
+    {
+      "Data": "2026-01-10T00:00:00",
+      "Opis": "lidl",
+      "KategoriaId": 1,
+      "Kwota": 25,
+      "Id": 6,
+      "Wartosc": 25
+    }
+  ],
+  "Kategorie": [
+    {
+      "Nazwa": "Jedzenie",
+      "LimitMiesieczny": 1000,
+      "Id": 1,
+      "Wartosc": 1000
+    },
+    {
+      "Nazwa": "Transport",
+      "LimitMiesieczny": 500,
+      "Id": 2,
+      "Wartosc": 500
+    },
+    {
+      "Nazwa": "Rozrywka",
+      "LimitMiesieczny": 300,
+      "Id": 3,
+      "Wartosc": 300
+    }
+  ],
+  "LimitOgolny": 2000
+}

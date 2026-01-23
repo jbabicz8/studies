@@ -1,0 +1,6 @@
+wwwroot\css\style.css
+wwwroot\index.html
+wwwroot\js\app.js
+C:\Users\tusie\source\repos\kontrola_wydatkow_domowych\kontrola_wydatkow_domowych\wwwroot\index.html
+C:\Users\tusie\source\repos\kontrola_wydatkow_domowych\kontrola_wydatkow_domowych\wwwroot\js\app.js
+C:\Users\tusie\source\repos\kontrola_wydatkow_domowych\kontrola_wydatkow_domowych\wwwroot\css\style.css

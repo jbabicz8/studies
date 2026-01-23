@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BJ6jvG4Uzc4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tusie\\source\\repos\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych\\kontrola_wydatkow_domowych.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tusie\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\tusie\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
